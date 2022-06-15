@@ -1,0 +1,193 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+void book_room(int a)
+{
+		fstream file;
+		file.open("Record.txt");
+		if(!file)
+		{
+		
+		int choice,confirm,second_confirm,third_confirm,floor,room_no;
+		char first_name[100];
+		char last_name[100];
+		int age;
+		int price,total_dues;
+		char gen[5];
+		double phone;
+		double cnic;
+		cout<<"\n\n";
+		cout<<"\tChoose which class of Room you Want"<<endl;
+		cout<<"\t1. Vip "<<endl;
+		cout<<"\t2. Non-vip"<<endl;
+		cout<<"\tPlease Enter a choice to begin booking room : ";
+		choice;
+		if(choice==1)
+		{
+			cout<<"\n\tPrice of Vip Room is RS.17000 or 100$ per month"<<endl;
+			price=100;
+		}
+		if(choice==2)
+		{
+			cout<<"\n\tPrice of Non-vip Room is RS.8800 or 50$ per month"<<endl;
+			price=50;
+		}
+		cout<<"\tPress again 1 or 2 to re-confirm your room choice : ";
+		cin>>second_confirm;
+		if(second_confirm==1)
+		{
+			cout<<"\tPlease Enter the Floor number at which you want to book room (0 to 10) : ";
+			cin>>floor;
+			cout<<"\tPlease Enter Room no : ";
+			cin>>room_no;
+			cout<<"\tDear Customer! Do you want Hotel Food. Monthly Food Charges is 30$"<<endl;
+			cout<<"\t1. Yes"<<endl;
+			cout<<"\t2. No"<<endl;
+			cout<<"\t";cin>>third_confirm;
+			
+			if(third_confirm==1)
+			{
+				total_dues=price+30;
+				cout<<"\tThe total monthly room price is"<<total_dues<<endl;
+				
+				cout<<"\tPlease Enter Your First Name : ";
+				cin.getline(first_name,100)>>first_name;
+				file<<first_name;
+				
+				cout<<"\tPlease Enter Your Last Name : ";
+				cin.getline(last_name,100)>>last_name;
+				
+				cout<<"\tPlease Enter your age : ";
+				cin>>age;
+				cout<<"\tPlease Enter your gender (M or F) : ";
+				cin>>gen;
+				cout<<"\tEnter Your Phone Number : ";
+				cin>>phone;
+				cout<<"\tEnter Your CNIC (without dashes): ";
+				cin>>cnic;
+				cout<<"\n\n\tCONGRAGULATIONS!"<<first_name<<" "<<last_name<<" YOUR ROOM IS BOOKED. STAY HAPPY.";
+			}
+			if(third_confirm==2)
+			{
+				cout<<"\n\tPlease Enter Your First Name : ";
+				cin.getline(first_name,100)>>first_name;
+				
+				cout<<"\tPlease Enter Your Last Name : ";
+				cin.getline(last_name,100)>>last_name;
+				
+				cout<<"\tPlease Enter your age : ";
+				cin>>age;
+				cout<<"\tPlease Enter your gender (M or F) : ";
+				cin>>gen;
+				cout<<"\tEnter Your Phone Number : ";
+				cin>>phone;
+				cout<<"\tEnter Your CNIC : ";
+				cin>>cnic;
+				cout<<"\n\n\tCONGRAGULATIONS!"<<first_name<<" "<<last_name<<" YOUR ROOM IS BOOKED. STAY HAPPY.";
+			}
+		}
+		if(second_confirm==2)
+		{
+			cout<<"\tPlease Enter the Floor number at which you want to book room (0 to 10) : ";
+			cin>>floor;
+			cout<<"\tPlease Enter Room no : ";
+			cin>>room_no;
+			cout<<"\tDear Customer! Do you want Hotel Food. Monthly Food Charges is 30$"<<endl;
+			cout<<"\t1. Yes"<<endl;
+			cout<<"\t2. No"<<endl;
+			cout<<"\t";cin>>third_confirm;
+			
+			if(third_confirm==1)
+			{
+				total_dues=price+30;
+				cout<<"\tThe total monthly room price is"<<total_dues<<endl;
+				
+				cout<<"\tPlease Enter Your First Name : ";
+				cin.getline(first_name,100)>>first_name;
+				
+				cout<<"\tPlease Enter Your Last Name : ";
+				cin.getline(last_name,100)>>last_name;
+				
+				cout<<"\tPlease Enter your age : ";
+				cin>>age;
+				cout<<"\tPlease Enter your gender (M or F) : ";
+				cin>>gen;
+				cout<<"\tEnter Your Phone Number : ";
+				cin>>phone;
+				cout<<"\tEnter Your CNIC (without dashes): ";
+				cin>>cnic;
+				cout<<"\n\n\tCONGRAGULATIONS!"<<first_name<<" "<<last_name<<" YOUR ROOM IS BOOKED. STAY HAPPY.";
+			}
+			if(third_confirm==2)
+			{
+				cout<<"\n\tPlease Enter Your First Name : ";
+				cin.getline(first_name,100)>>first_name;
+				
+				cout<<"\tPlease Enter Your Last Name : ";
+				cin.getline(last_name,100)>>last_name;
+				
+				cout<<"\tPlease Enter your age : ";
+				cin>>age;
+				cout<<"\tPlease Enter your gender (M or F) : ";
+				cin>>gen;
+				cout<<"\tEnter Your Phone Number : ";
+				cin>>phone;
+				cout<<"\tEnter Your CNIC : ";
+				cin>>cnic;
+				cout<<"\n\n\tCONGRAGULATIONS! "<<first_name<<" "<<last_name<<" YOUR ROOM IS BOOKED. STAY HAPPY.";
+			}
+		
+		}
+		file.close();
+	}
+}
+void customer_record(int a)
+{
+	
+}
+void rooms_alloted(int a)
+{
+	
+}
+void edit_record(int a)
+{
+	
+}
+
+int main()
+{
+	int choice;
+	cout<<"\tGreetings\n\n";
+	cout<<"\tChoose any choice given below\n";
+	cout<<"\t1. Book a room"<<endl;
+	cout<<"\t2. Customer Record"<<endl;
+	cout<<"\t3. Rooms Alloted"<<endl;
+	cout<<"\t4. Edit record"<<endl;
+	cout<<"\t5. Exit"<<endl;
+	cout<<"\tPlease Enter Your Choice : ";
+	cin>>choice;
+	if(choice==1)
+	{
+		book_room(choice);	
+	}
+	else if(choice==2)
+	{
+		
+	}
+	else if(choice==3)
+	{
+		
+	}
+	else if(choice==4)
+	{
+		
+	}
+	else if(choice==5)
+	{
+		
+	}
+	else
+	{
+		
+	}
+}
