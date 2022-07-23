@@ -1,0 +1,339 @@
+* {
+    padding: 1px;
+    margin: 1px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.s1 {
+    height: 60px;
+}
+
+.header {
+    display: block;
+}
+
+.left h1 {
+    float: left;
+    color: blueviolet;
+    margin-top: 8px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.right {
+
+    float: right;
+    padding-right: 40px;
+}
+
+.right li {
+    float: left;
+    list-style-type: none;
+    display: flex;
+}
+
+.right li .a1 {
+    display: flex;
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid blueviolet;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.right li .a2 {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid blueviolet;
+    border-radius: 1px;
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.right li:hover {
+    margin-top: 4px;
+}
+
+.s2 {
+    height: 500px;
+}
+
+.main {
+    position: static;
+    margin-top: 160px;
+    margin-left: 60px;
+    display: inline-block;
+}
+
+.main .head1,
+.head2 {
+    display: inline-block;
+}
+
+.main .head2 {
+    color: blueviolet;
+}
+
+.mainleft {
+    display: inline-block;
+    position: absolute;
+}
+
+.mainleft img {
+    width: 90%;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 100px;
+}
+
+.head1 {
+    display: block;
+    text-align: center;
+}
+
+.s2btn1 {
+    display: inline-block;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 400px;
+
+    padding: 15px;
+    cursor: pointer;
+}
+
+.buttons :hover {
+    background-color: brown;
+}
+
+.s2btn2 {
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 400px;
+    left: 210px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.rdiv {
+    margin-left: 100px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 28%;
+    height: 450px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.rdiv img {
+    padding-left: -1px;
+    width: 100%;
+    margin-left: -1px;
+    margin-top: -2px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+.p1 {
+    width: 30%;
+    display: block;
+    font-size: 12px;
+    margin-left: 7px;
+    height: 20px;
+}
+
+.rdivh1 {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.p2 {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.rdivbtn {
+
+    color: white;
+    padding: 10px;
+    border: none;
+    background-color: blueviolet;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+.mdiv {
+
+    display: inline-block;
+    position: absolute;
+    top: 630px;
+    width: 368px;
+    left: 489px;
+    height: 450px;
+}
+
+.ldiv {
+    display: inline-block;
+    position: absolute;
+    top: 630px;
+    width: 368px;
+    left: 880px;
+    height: 450px;
+}
+
+.mdiv img {
+    padding-left: -1px;
+    width: 100%;
+    margin-left: -1px;
+    margin-top: -2px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.mdiv .p1 {
+    width: 30%;
+    display: block;
+    font-size: 12px;
+    margin-left: 7px;
+    height: 20px;
+}
+
+.mdivh1 {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.mdivbtn {
+
+    color: white;
+    padding: 10px;
+    border: none;
+    background-color: blueviolet;
+    margin-top: 42px;
+    text-align: center;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+.ldiv img {
+    padding-left: -1px;
+    width: 100%;
+    margin-left: -1px;
+    margin-top: -2px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+.ldivh1 {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.s4 {
+    height: 330px;
+}
+
+.top {
+    display: block;
+    margin: auto;
+    text-align: center;
+    height: 60px;
+}
+
+.lefttest {
+    position: absolute;
+    left: 90px;
+    display: inline-block;
+
+    background-color: #e5eded;
+    width: 570px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.lefttest img {
+    position: absolute;
+    width: 5%;
+    top: 10px;
+    left: 10px;
+}
+
+.lefttest p {
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+}
+
+.lefttest h3 {
+    position: absolute;
+    top: 170px;
+    font-size: 14px;
+    left: 10px;
+}
+
+.lefttest .p3 {
+    position: absolute;
+    top: 180px;
+    font-size: 12px;
+}
+
+.righttest {
+    position: absolute;
+    right: 90px;
+    display: inline-block;
+    background-color: #e5eded;
+    width: 570px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.righttest img {
+    position: absolute;
+    width: 5%;
+    top: 10px;
+    left: 10px;
+}
+
+.righttest p {
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+}
+
+.righttest h3 {
+    position: absolute;
+    top: 170px;
+    font-size: 14px;
+    left: 10px;
+}
+
+.righttest .p3 {
+    position: absolute;
+    top: 180px;
+    font-size: 12px;
+}
+
+.s5 {
+    margin: auto;
+}
+
+.s5mid {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 100;
+}
